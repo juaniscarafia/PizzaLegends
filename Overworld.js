@@ -15,7 +15,7 @@ class Overworld {
             this.map.drawLowerImage(this.ctx);
             //Draw Gane Objects
             Object.values(this.map.gameObjects).forEach(object => {
-                //object.x += 0.02; //Move objects
+                object.x += 1; //Move objects
                 object.sprite.draw(this.ctx);
             });
             //Draw Upper Layer
@@ -29,8 +29,8 @@ class Overworld {
     }
 
     init() {
-        //this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
-        this.map = new OverworldMap(window.OverworldMaps.Kitchen);
+        this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
+        //this.map = new OverworldMap(window.OverworldMaps.Kitchen);
         this.startGameLoop();
     }
 }

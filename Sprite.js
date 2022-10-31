@@ -10,9 +10,11 @@ class Sprite {
         //Shadow
         this.shadow = new Image();
         this.useShadow = true; //config.useShadow || false;
+
         if (this.useShadow) {
             this.shadow.src = "/images/characters/shadow.png";    
         }
+
         this.shadow.onload = () => {
             this.isShadowsLoaded = true;
         };
@@ -31,8 +33,8 @@ class Sprite {
     }
 
     draw(ctx) {
-        const x = this.gameObject.x * 16 - 8;
-        const y = this.gameObject.y * 16 - 18;
+        const x = this.gameObject.x - 8;
+        const y = this.gameObject.y - 18;
 
         this.isShadowsLoaded && ctx.drawImage(this.shadow, x, y);
 
