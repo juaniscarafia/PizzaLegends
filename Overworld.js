@@ -15,7 +15,9 @@ class Overworld {
             this.map.drawLowerImage(this.ctx);
             //Draw Gane Objects
             Object.values(this.map.gameObjects).forEach(object => {
-                object.x += 1; //Move objects
+                object.update({
+                    
+                }); //Move objects
                 object.sprite.draw(this.ctx);
             });
             //Draw Upper Layer
