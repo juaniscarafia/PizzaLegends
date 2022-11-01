@@ -3,13 +3,14 @@
 }
 
 body {
-  background: #333;
+  background: #fff;
   padding: 0;
   margin: 0;
   overflow: hidden;
 }
 
 .game-container {
+  background: #333;
   position: relative; 
   width: 352px;
   height: 198px;
