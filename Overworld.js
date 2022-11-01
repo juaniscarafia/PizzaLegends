@@ -16,7 +16,7 @@ class Overworld {
             //Draw Gane Objects
             Object.values(this.map.gameObjects).forEach(object => {
                 object.update({
-                    
+                    arrow: this.directionInput.direction,
                 }); //Move objects
                 object.sprite.draw(this.ctx);
             });
@@ -33,6 +33,10 @@ class Overworld {
     init() {
         this.map = new OverworldMap(window.OverworldMaps.DemoRoom);
         //this.map = new OverworldMap(window.OverworldMaps.Kitchen);
+        
+        this.directionInput = new DirectionInput();
+        this.directionInput.init();
+
         this.startGameLoop();
     }
 }
