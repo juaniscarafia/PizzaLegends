@@ -164,7 +164,7 @@ window.OverworldMaps = {
             [utils.asGridCoord(5,10)]: [
                 {
                     events: [
-                    { type: "changeMap", map: "Kitchen" }
+                        { type: "changeMap", map: "Kitchen" }
                     ]
                 }
             ]
@@ -185,9 +185,9 @@ window.OverworldMaps = {
                 src: "/images/characters/people/npc3.png",
                 talking: [
                     {
-                    events: [
-                        { type: "textMessage", text: "You made it!", faceHero:"npcB" },
-                    ]
+                        events: [
+                            { type: "textMessage", text: "You made it!", faceHero:"npcB" },
+                        ]
                     }
                 ]
             })
