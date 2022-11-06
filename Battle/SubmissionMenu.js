@@ -1,23 +1,18 @@
 class SubmissionMenu {
-    constructor() {
-
+    constructor({ caster, enemy, onComplete }) {
+        this.caster = caster;
+        this.enemy = enemy;
+        this.onComplete = onComplete;
     }
 
-    createElement() {
-        this.element = document.createElement("div");
-        this.element.classList.add("Battle");
-        this.element.innerHTML = (`
-            <div class="Battle_hero">
-                <img src="${'/images/characters/people/hero.png'}" alt="Hero"/>
-            </div>
-            <div class="Battle_enemy">
-                <img src="${'/images/characters/people/npc3.png'}" alt="Enemy"/>
-            </div>
-        `);
+    decide() {
+        this.onComplete({
+            action: Actions[this.caster.actions[0]],
+            target: this.enemy
+        });
     }
 
     init(container) {
-        this.createElement();
-        container.appendChild(this.element);
+        this.decide();
     }
 }
