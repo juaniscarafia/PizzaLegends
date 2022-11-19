@@ -62,11 +62,58 @@ class Combatant {
         this.hudElement.setAttribute("data-active", this.isActive);
         this.pizzaElement.setAttribute("data-active", this.isActive);
         
-        //
+        //Update HP & XP percent fills
         this.hpFills.forEach(rect => rect.style.width = `${this.hpPercent}%`);
         this.xpFills.forEach(rect => rect.style.width = `${this.xpPercent}%`);
 
+        //Update level on screen
         this.hudElement.querySelector(".Combatant_level").innerText = this.level;
+
+        //Update status
+        const statusElement = this.hudElement.querySelector(".Combatant_status");
+        if (this.status) {
+            statusElement.innerText = this.status.type;
+            statusElement.style.display = "block";
+        }
+        else {
+            statusElement.innerText = "";
+            statusElement.style.display = "none";
+        }
+    }
+
+    getReplaceEvents(originalEvents) {
+        if (this.status?.type === "clumsy") {
+            return [
+                { type: "textMessage", text: `${this.name} flops over!` },
+            ];
+        }
+        return originalEvents;
+    }
+
+    getPostEvents() {
+        if (this.status?.type === "saucy" && utils.randomFromArray([true, false, false])) {
+            return [
+                { type: "textMessage", text: "Feelin' saucy!"},
+                { type: "stateChange", recover: 5, onCaster: true }
+            ]
+        }
+        return [];
+    }
+
+    decrementStatus() {
+        if (this.status?.expiresIn > 0) {
+            this.status.expiresIn -= 1;
+            if (this.status.expiresIn === 0) {
+                this.update({
+                    status: null
+                });
+                return {
+                    type: "textMessage",
+                    text: "Status expired!"
+                }
+            }
+        }
+        return null;
     }
 
     init(container) {
