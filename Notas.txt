@@ -1,26 +1,29 @@
 Capitulos:
-- 01 ==> OK
-- 02 ==> OK
-- 03 ==> OK
-- 04 ==> OK
-- 05 ==> OK
-- 06 ==> OK
-- 07 ==> OK
-- 08 ==> OK
-- 09 ==> OK
-- 10 ==> OK
-- 11 ==> OK
-- 12 ==> OK
-- 13 ==> 11
-- 14 ==> 
-- 15 ==> 
-- 16 ==> 
-- 17 ==> 
-- 18 ==> 
-- 19 ==> 
-- 20 ==> 
-- 21 ==> 
-- 22 ==> 
-- 23 ==> 
-- 24 ==> 
-- 25 ==> 
+OVERWORLD:
+- 01 ==> Project Beginnings - OK
+- 02 ==> Adding Game Objects Thumbnail - OK
+- 03 ==> Overworld Maps Thumbnail - OK
+- 04 ==> Grid Based Movement Thumbnail - OK
+- 05 ==> Character Animations Thumbnail - OK
+- 06 ==> Hero Camera Thumbnail - OK
+- 07 ==> Walls and Collisions Thumbnail - OK
+- 08 ==> Basic Behaviors and Cutscenes Thumbnail - OK
+- 09 ==> Expanded Cutscenes Thumbnail - OK
+- 10 ==> Typewriter Textboxes and Scene Transitions Thumbnail - OK
+BATTLES:
+- 11 ==> Turn Based Battles Battle System Intro Thumbnail - OK
+- 12 ==> Attacks and Turns Thumbnail - OK
+- 13 ==> Battle Status Effects Thumbnail - OK
+- 14 ==> Adding an Attack Menu Thumbnail - OK
+- 15 ==> Battle Items Thumbnail
+- 16 ==> Pizza Team Lineups Thumbnail
+- 17 ==> Pizza Team HUD Thumbnail
+- 18 ==> Finishing the Battles Thumbnail
+RPG ELEMENTS:
+- 19 ==> Overworld HUD
+- 20 ==> Pause Menu Thumbnail
+- 21 ==> Story Progress Thumbnail
+- 22 ==> Crafting Pizzas Thumbnail
+- 23 ==> Save Game Progress Thumbnail
+- 24 ==> Adding a Title Screen Thumbnail
+- 25 ==> NPC Updates Thumbnail
