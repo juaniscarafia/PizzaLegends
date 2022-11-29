@@ -4,8 +4,8 @@ class ReplacementMenu {
         this.onComplete = onComplete;
     }
 
-    decide(replacement) {
-        this.menuSubmit(this.replacement[0]);
+    decide() {
+        this.menuSubmit(this.replacements[0]);
     }
 
     menuSubmit(replacement) {
