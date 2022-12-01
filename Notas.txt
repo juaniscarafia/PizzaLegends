@@ -15,10 +15,10 @@ BATTLES:
 - 12 ==> Attacks and Turns Thumbnail - OK
 - 13 ==> Battle Status Effects Thumbnail - OK
 - 14 ==> Adding an Attack Menu Thumbnail - OK
-- 15 ==> Battle Items Thumbnail
-- 16 ==> Pizza Team Lineups Thumbnail
-- 17 ==> Pizza Team HUD Thumbnail
-- 18 ==> Finishing the Battles Thumbnail
+- 15 ==> Battle Items Thumbnail - OK
+- 16 ==> Pizza Team Lineups Thumbnail - OK
+- 17 ==> Pizza Team HUD Thumbnail - OK
+- 18 ==> Finishing the Battles Thumbnail - 22:43
 RPG ELEMENTS:
 - 19 ==> Overworld HUD
 - 20 ==> Pause Menu Thumbnail
