@@ -18,9 +18,9 @@ BATTLES:
 - 15 ==> Battle Items Thumbnail - OK
 - 16 ==> Pizza Team Lineups Thumbnail - OK
 - 17 ==> Pizza Team HUD Thumbnail - OK
-- 18 ==> Finishing the Battles Thumbnail - 22:43
+- 18 ==> Finishing the Battles Thumbnail - OK
 RPG ELEMENTS:
-- 19 ==> Overworld HUD
+- 19 ==> Overworld HUD - OK
 - 20 ==> Pause Menu Thumbnail
 - 21 ==> Story Progress Thumbnail
 - 22 ==> Crafting Pizzas Thumbnail
